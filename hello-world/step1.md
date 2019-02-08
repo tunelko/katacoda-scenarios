@@ -2,7 +2,7 @@ The Docker environment is structured within a Client/Server approach. This aim i
 
 As such, certain things that you might be different, such as mounting volumes as they would be mounted on the server, instead of the client.
 
-For example `docker run -it -v /data:/data ubuntu "echo hello > /data/test"`{{execute}} would not create a file in `ls /data/`{{execute}}.
+For example `docker run -it -v /data:/data ubuntu"`{{execute}} would not create a file in `ls /data/`{{execute}}.
 
 You can access the server via SSH, allowing you to see the data created from the container. For example `ssh root@host01 "ls /data/"`{{execute}}.
 
