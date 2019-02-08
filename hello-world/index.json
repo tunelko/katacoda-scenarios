@@ -1,24 +1,30 @@
 {
-  "title": "Creating isolated docker challenge",
-  "description": "How to get into a new scenario designing challenges",
-  "difficulty": "beginner",
-  "time": "10 minutes",
+  "title": "Docker",
+  "description": "General purpose Docker environment",
   "details": {
-    "steps": [{
-      "title": "Step 1 - Run Command",
-      "text": "step1.md"
-    }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
+    "steps": [
+      {
+        "title": "Step 1 - Client/Server",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Run commands in background",
+        "code": "foreground.sh",
+        "courseData": "background.sh",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Pre-cached Images",
+        "text": "step3.md"
+      }
+    ],
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
-    "uimessage1": "\u001b[32mI'm Terminal. \r\n\u001b[m\r\n"
+    "hideintro": true,
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "docker"
